@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLL SYSTEM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <img src="./img/logo01.png" alt="">
+    </div>
+    
+    <form>
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+    </form>
+
+    <script>
+
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+         if(login == "admin" && senha == "admin"){
+           alert('Sucess');
+           location.href = "validado.html";
+        }else {
+            alert('Usuario ou senha incorreta');
+        }
+
+
+}
+    </script>
+</body>
+</html>
